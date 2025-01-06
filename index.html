@@ -4,7 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+            margin: 0;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            color: #f4a261;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            background: #fff;
+            margin: 1rem auto;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        section h1 {
+            margin-bottom: 1rem;
+            color: #333;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .portfolio-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .portfolio-item {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            width: calc(50% - 1rem);
+            text-align: center;
+        }
+
+        .portfolio-item h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-item p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .portfolio-item a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            color: #fff;
+            background: #333;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .portfolio-item a:hover {
+            background: #f4a261;
+        }
+
+        iframe {
+            border: none;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input,
+        form textarea,
+        form button {
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        form button {
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #f4a261;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,51 +168,45 @@
         <!-- About Me Section -->
         <section id="about">
             <h1>About Me</h1>
-            <p>Write a brief introduction about yourself, your background, and your skills.</p>
+            <p>Hello! My name is Alejandro Pastor, I am a software engineer with a recent focus on developing predictive systems utilizing Python, TensorFlow, and other technologies. My areas of expertise include machine learning, data analysis, and back-end development. A notable accomplishment of mine is the design of Wayqu, an early warning system for natural disasters.</p>
         </section>
 
         <!-- Portfolio Section -->
         <section id="portfolio">
             <h1>Portfolio</h1>
             <div class="portfolio-items">
-                <!-- Add your portfolio items here -->
                 <div class="portfolio-item">
-                    <h2>Project Title</h2>
-                    <p>Description of the project and technologies used.</p>
-                    <a href="project-link" target="_blank">View Project</a>
+                    <h2>Wayqu!</h2>
+                    <p>A mudslide early alarm system based on machine learning</p>
+                    <a href="url">github.com/AlecoPB</a>
                 </div>
-                <!-- Repeat for more portfolio items -->
+
             </div>
         </section>
 
         <!-- Resume Section -->
         <section id="resume">
             <h1>Resume</h1>
-            <p>Download my resume: <a href="resume.pdf" target="_blank">Download PDF</a></p>
-            <!-- Embed the resume for direct viewing (optional) -->
-            <iframe src="resume.pdf" width="100%" height="500px"></iframe>
+            <p>Download my resume: <a href="url">https://drive.google.com/file/d/1FmUJf7nFsLFGSkhBhQPpZl4RCeVGir3N/view?usp=sharing</a>
+            <iframe src="docs/resume.pdf" width="100%" height="500px"></iframe>
         </section>
 
         <!-- Contact Section -->
         <section id="contact">
             <h1>Contact</h1>
-            <form action="contact-form-handler.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+            <p>You can reach me through the following contact details:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:ajoaquinpg@gmail.com">ajoaquinpg@gmail.com</a></li>
+                <li><strong>Phone:</strong> <a href="tel:+33783916773">+33 7 83 91 67 73</a></li>
+                <li><strong>Address:</strong> 20 Rue Aristote, Toulouse - 31400</li>
+                <li><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/alejandro-pastor-pe" target="_blank">linkedin.com/in/alejandro-pastor-pe</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/AlecoPB" target="_blank">github.com/AlecoPB</a></li>
+            </ul>
+</section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Alejandro Pastor. All rights reserved.</p>
     </footer>
 </body>
 </html>
